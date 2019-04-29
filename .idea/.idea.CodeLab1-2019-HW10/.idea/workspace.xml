@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ed2605f-a2f4-42f8-b550-cdbe136642a6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Homework10/.idea/.idea.Homework10/.idea/contentModel.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Homework10/.idea/.idea.Homework10/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Homework10/.idea/.idea.Homework10/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Homework10/.idea/.idea.Homework10/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Homework10/.idea/.idea.Homework10/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Homework10/.idea/.idea.Homework10/riderModule.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homework10/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Homework10/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homework10/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Homework10/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homework10/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Homework10/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CodeLab1-2019-HW10/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CodeLab1-2019-HW10/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CodeLab1-2019-HW10/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CodeLab1-2019-HW10/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CodeLab1-2019-HW10/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CodeLab1-2019-HW10/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Homework10/.idea/.idea.Homework10/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Homework10/.idea/.idea.Homework10/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Homework10/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Homework10/ProjectSettings/ProjectVersion.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,64 +14,32 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="-1080911728">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="1" />
-          <entry key="project.open.time.3" value="1" />
-          <entry key="project.opened" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="cs" value="1" />
-          <entry key="gitignore" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="C#" value="1" />
-          <entry key="PLAIN_TEXT" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="cs" value="151" />
-          <entry key="txt" value="10" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="C#" value="151" />
-          <entry key="PLAIN_TEXT" value="10" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="625">
+            <state relative-caret-position="750">
               <caret line="50" column="28" selection-start-line="50" selection-start-column="28" selection-end-line="50" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Homework10/Assets/Scripts/ChainManager.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="165">
-              <caret line="13" column="46" lean-forward="true" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
+              <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Homework10/Assets/Scripts/CameralookFollow.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
               <folding>
-                <marker date="1556514511953" expanded="false" signature="6:78" ph="..." />
-                <marker date="1556514511953" expanded="true" signature="232:520" ph="{...}" />
-                <marker date="1556514511953" expanded="true" signature="251:343" ph="{...}" />
-                <marker date="1556514511953" expanded="true" signature="304:337" ph="{...}" />
-                <marker date="1556514511953" expanded="true" signature="418:439" ph="{...}" />
-                <marker date="1556514511953" expanded="true" signature="497:518" ph="{...}" />
+                <element signature="e#0#78#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -88,6 +51,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Homework10/Assets/Scripts/CameralookFollow.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Homework10/Assets/Scripts/ChainManager.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -97,24 +61,6 @@
         <option value="$PROJECT_DIR$/Homework10/Assets/Scripts/ChainManager.cs" />
       </list>
     </option>
-  </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="NodePackageJsonFileManager">
-    <packageJsonPaths>
-      <path value="$PROJECT_DIR$/Homework10/Library/PackageCache/com.unity.ads@2.0.8/package.json" />
-      <path value="$PROJECT_DIR$/Homework10/Library/PackageCache/com.unity.analytics@3.3.2/package.json" />
-      <path value="$PROJECT_DIR$/Homework10/Library/PackageCache/com.unity.collab-proxy@1.2.16/package.json" />
-      <path value="$PROJECT_DIR$/Homework10/Library/PackageCache/com.unity.multiplayer-hlapi@1.0.2/package.json" />
-      <path value="$PROJECT_DIR$/Homework10/Library/PackageCache/com.unity.purchasing@2.0.6/package.json" />
-      <path value="$PROJECT_DIR$/Homework10/Library/PackageCache/com.unity.textmeshpro@2.0.0/package.json" />
-      <path value="$PROJECT_DIR$/Homework10/Library/PackageCache/com.unity.xr.legacyinputhelpers@2.0.2/package.json" />
-      <path value="$PROJECT_DIR$/Homework10/Library/PackageCache/nuget.mono-cecil@0.1.5-preview/package.json" />
-    </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="13" />
@@ -138,12 +84,14 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AssemblyExplorer" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -168,6 +116,7 @@
       <option name="presentableId" value="Default" />
       <updated>1556512183515</updated>
       <workItem from="1556512186983" duration="1421000" />
+      <workItem from="1556557365345" duration="277000" />
     </task>
     <task id="LOCAL-00001" summary="Initialize">
       <created>1556512601288</created>
@@ -180,7 +129,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1421000" />
+    <option name="totallyTimeSpent" value="1698000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -192,18 +141,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info id="Image Layers" />
+      <window_info id="Capture Tool" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25266525" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="NuGet" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Unit Tests" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Performance Profiler" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -211,22 +156,27 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Errors In Solution" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Unit Tests Coverage" />
+      <window_info anchor="bottom" id="NuGet" order="7" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Unit Tests" order="11" />
+      <window_info anchor="bottom" id="Terminal" order="12" />
+      <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
+      <window_info anchor="right" id="Capture Analysis" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Errors In Solution" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Unit Tests Coverage" order="5" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initialize" />
     <option name="LAST_COMMIT_MESSAGE" value="Initialize" />
@@ -244,7 +194,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="625">
+        <state relative-caret-position="750">
           <caret line="50" column="28" selection-start-line="50" selection-start-column="28" selection-end-line="50" selection-end-column="28" />
         </state>
       </provider>
@@ -252,14 +202,15 @@
     <entry file="file://$PROJECT_DIR$/Homework10/Assets/Scripts/ChainManager.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
-          <caret line="13" column="46" lean-forward="true" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
+          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Homework10/Assets/Scripts/CameralookFollow.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
           <folding>
-            <marker date="1556514511953" expanded="false" signature="6:78" ph="..." />
-            <marker date="1556514511953" expanded="true" signature="232:520" ph="{...}" />
-            <marker date="1556514511953" expanded="true" signature="251:343" ph="{...}" />
-            <marker date="1556514511953" expanded="true" signature="304:337" ph="{...}" />
-            <marker date="1556514511953" expanded="true" signature="418:439" ph="{...}" />
-            <marker date="1556514511953" expanded="true" signature="497:518" ph="{...}" />
+            <element signature="e#0#78#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 public class MouseDragger : ChainManager
@@ -7,6 +8,8 @@ public class MouseDragger : ChainManager
 
     public Vector3 mousePos;
     public Vector3 reference;
+    public bool aligning;
+    public Vector3 target;
     
     // Start is called before the first frame update
     void Start()
@@ -26,6 +29,23 @@ public class MouseDragger : ChainManager
         //print(hand);
                 
         //print(mousePos);
+
+        if (aligning)
+        {
+            if (Vector3.Angle(hand, target) > 0.1)
+            {
+                //Vector3 newDir = Vector3.RotateTowards(hand, target, Time.deltaTime, 0);
+                //Debug.DrawRay(transform.position, newDir, Color.yellow);
+                transform.Rotate(0, 0, Vector3.SignedAngle(hand, target, Vector3.forward) / 10);        
+            }
+            else
+            {
+                transform.Rotate(0, 0, Vector3.SignedAngle(hand, target, Vector3.forward));
+                aligning = false;
+            }
+        
+            
+        }
     }
 
     private void OnMouseDown()
@@ -45,6 +65,7 @@ public class MouseDragger : ChainManager
     private void OnMouseUp()
     {
         Align();
+        aligning = true;
     }
 
     void Align()
@@ -59,10 +80,13 @@ public class MouseDragger : ChainManager
             //print(Vector3.Dot(radiu, hand));
         }
 
-        Vector3 target = radius[comparon.IndexOf(Mathf.Max(comparon.ToArray()))];
+        target = radius[comparon.IndexOf(Mathf.Max(comparon.ToArray()))];
         //print("hand" + hand);
         //print("target" + target);
 
-        transform.Rotate(0, 0, Vector3.SignedAngle(hand, target, Vector3.forward));
+        //print(Vector3.Dot(hand.normalized, target.normalized));
+        
+        
+
     }
 }

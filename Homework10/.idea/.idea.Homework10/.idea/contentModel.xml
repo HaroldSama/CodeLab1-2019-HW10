@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Noah.Noah-PC\.Rider2018.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Noah.Noah-PC\.Rider2018.2\system\resharper-host\local\Transient\ReSharperHost\v182\SolutionCaches\_Homework10.1303127062.00" t="ExcludeRecursive" />
+    <e p="D:\@@@我的文件@@@\NYU\Semester 2\CodeLab1\CodeLab1-2019-HW10\Homework10" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Scripts" t="Include">
+          <e p="CameralookFollow.cs" t="Include" />
+          <e p="ChainManager.cs" t="Include" />
+          <e p="FixedRotation.cs" t="Include" />
+          <e p="MouseDragger.cs" t="Include" />
+        </e>
+      </e>
+      <e p="Homework10.sln" t="IncludeFlat" />
+      <e p="Library" t="ExcludeRecursive" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Temp" t="ExcludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+      </e>
+    </e>
+  </component>
+</project>

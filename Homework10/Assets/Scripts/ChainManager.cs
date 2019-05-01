@@ -9,7 +9,7 @@ public class ChainManager : MonoBehaviour
 {
     public List<GameObject> nodes = new List<GameObject>();
     public List<Vector3> radius = new List<Vector3>();
-    public List<Vector3> tangents = new List<Vector3>();
+    //public List<Vector3> tangents = new List<Vector3>();
     public Vector3 hand;
     
     void Awake()
@@ -26,7 +26,8 @@ public class ChainManager : MonoBehaviour
             
             //Get the vectors that tangent with this chain loop
             Vector3 tangent = Vector3.Cross(radiu, transform.forward);
-            tangents.Add(tangent);
+            //tangents.Add(tangent);
+            child.GetComponent<NodeInfo>().tangent = tangent;
             Debug.DrawRay(child.position, tangent, Color.green, float.MaxValue);
         }
     }

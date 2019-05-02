@@ -87,8 +87,7 @@ public class CommonNode : MonoBehaviour
             Vector3 tangent = node.GetComponent<NodeInfo>().tangent;
             float dotProPos = Vector3.Dot(refLine.normalized, tangent.normalized);
             float dotProNeg = Vector3.Dot(refLine.normalized, -tangent.normalized);
-            float dotProMax = Mathf.Max(dotProPos, dotProNeg);
-            comparon.Add(dotProMax);
+            comparon.Add(Mathf.Max(dotProPos, dotProNeg));
             nodesCompared.Add(node);
         }
         

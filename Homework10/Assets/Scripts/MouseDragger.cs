@@ -48,13 +48,13 @@ public class MouseDragger : ChainManager
         }
     }
 
-    private void OnMouseDown()
+    public void OnMouseDown()
     {
         reference = mousePos - transform.position;
         //print("ref" + reference);
     }
 
-    private void OnMouseDrag()
+    public void OnMouseDrag()
     {
         transform.Rotate(0, 0, Vector3.SignedAngle(reference, mousePos - transform.position, Vector3.forward));
         reference = mousePos - transform.position;
@@ -62,10 +62,15 @@ public class MouseDragger : ChainManager
         
     }
 
-    private void OnMouseUp()
+    public void OnMouseUp()
     {
         Align();
         aligning = true;
+    }
+
+    void DragRotate()
+    {
+        
     }
 
     void Align()
@@ -73,14 +78,14 @@ public class MouseDragger : ChainManager
         //Find the closest radius to align by comparing every dot product between the radius and the hand     
         List<float> comparon = new List<float>();
         
-        foreach (var radiu in radius)
+        foreach (var radiu in frame)
         {
-            comparon.Add(Vector3.Dot(radiu, hand));
+            comparon.Add(Vector3.Dot(radiu.normalized, hand.normalized));
             //print("radius" + radiu);
             //print(Vector3.Dot(radiu, hand));
         }
 
-        target = radius[comparon.IndexOf(Mathf.Max(comparon.ToArray()))];
+        target = frame[comparon.IndexOf(Mathf.Max(comparon.ToArray()))];
         //print("hand" + hand);
         //print("target" + target);
 

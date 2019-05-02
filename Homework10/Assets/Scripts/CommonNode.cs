@@ -10,6 +10,9 @@ public class CommonNode : MonoBehaviour
     public Vector3 refLineTip;
     public Vector3 refLine;
     public Vector3 mousePos;
+
+    public bool chainDetermined;
+    public MouseDragger chainControlled;
     
     // Start is called before the first frame update
     void Start()
@@ -40,9 +43,16 @@ public class CommonNode : MonoBehaviour
         mousePos.z = 10;
         mousePos = Camera.main.ScreenToWorldPoint(mousePos);
 
-        if (refLine.magnitude > 0.1)
+        if (refLine.magnitude > 0.1 && !chainDetermined)
         {
-            ChainDetermine();
+            chainDetermined = true;
+            chainControlled = ChainDetermine();
+            chainControlled.OnMouseDown();
+        }
+
+        if (chainDetermined)
+        {
+            chainControlled.OnMouseDrag();
         }
     }
 
@@ -60,14 +70,31 @@ public class CommonNode : MonoBehaviour
         Debug.DrawRay(refLineRoot, refLine, Color.cyan);
     }
 
-    void ChainDetermine()
+    private void OnMouseUp()
     {
-        List<float> comparon;
-        Dictionary<float, GameObject> nodeDeterminator;
+        refLine = Vector3.zero;
+        chainDetermined = false;
+        chainControlled.OnMouseUp();
+    }
+
+    MouseDragger ChainDetermine()
+    {
+        List<float> comparon = new List<float>();
+        List<GameObject> nodesCompared = new List<GameObject>();
 
         foreach (var node in nodesInvolved)
         {
-            
+            Vector3 tangent = node.GetComponent<NodeInfo>().tangent;
+            float dotProPos = Vector3.Dot(refLine.normalized, tangent.normalized);
+            float dotProNeg = Vector3.Dot(refLine.normalized, -tangent.normalized);
+            float dotProMax = Mathf.Max(dotProPos, dotProNeg);
+            comparon.Add(dotProMax);
+            nodesCompared.Add(node);
         }
+        
+        print(comparon[0] + " " + comparon[1]);
+        print(nodesCompared[0].name + " " +nodesCompared[1].name);
+
+        return nodesCompared[comparon.IndexOf(Mathf.Max(comparon.ToArray()))].transform.parent.gameObject.GetComponent<MouseDragger>();
     }
 }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CommonNode : MonoBehaviour
 {
-    public List<GameObject> chainsInvolved;
+    public GameObject chainInvolved;
     public List<GameObject> nodesInvolved;
     public Vector3 refLineRoot;
     public Vector3 refLineTip;
@@ -13,7 +13,14 @@ public class CommonNode : MonoBehaviour
 
     public bool chainDetermined;
     public MouseDragger chainControlled;
-    
+
+    private FixedRotation _fixedRotation;
+
+    private void Awake()
+    {
+        _fixedRotation = gameObject.GetComponent<FixedRotation>();
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -46,7 +53,17 @@ public class CommonNode : MonoBehaviour
         if (refLine.magnitude > 0.1 && !chainDetermined)
         {
             chainDetermined = true;
-            chainControlled = ChainDetermine();
+            if (nodesInvolved.Count > 1)
+            {
+                chainInvolved = ChainDetermine();
+            }
+            else
+            {
+                _fixedRotation.nodeRidding = nodesInvolved[0];
+                chainInvolved = nodesInvolved[0].transform.parent.gameObject;
+            }
+            
+            chainControlled = chainInvolved.GetComponent<MouseDragger>();
             chainControlled.OnMouseDown();
         }
 
@@ -77,7 +94,7 @@ public class CommonNode : MonoBehaviour
         chainControlled.OnMouseUp();
     }
 
-    MouseDragger ChainDetermine()
+    GameObject ChainDetermine()
     {
         List<float> comparon = new List<float>();
         List<GameObject> nodesCompared = new List<GameObject>();
@@ -90,10 +107,16 @@ public class CommonNode : MonoBehaviour
             comparon.Add(Mathf.Max(dotProPos, dotProNeg));
             nodesCompared.Add(node);
         }
-        
-        print(comparon[0] + " " + comparon[1]);
-        print(nodesCompared[0].name + " " +nodesCompared[1].name);
 
-        return nodesCompared[comparon.IndexOf(Mathf.Max(comparon.ToArray()))].transform.parent.gameObject.GetComponent<MouseDragger>();
+        GameObject nodeDetermined = nodesCompared[comparon.IndexOf(Mathf.Max(comparon.ToArray()))];
+
+        if (gameObject.CompareTag("Player"))
+        {
+            _fixedRotation.nodeRidding = nodeDetermined;
+        }
+        //print(comparon[0] + " " + comparon[1]);
+        //print(nodesCompared[0].name + " " +nodesCompared[1].name);
+
+        return nodeDetermined.transform.parent.gameObject;
     }
 }

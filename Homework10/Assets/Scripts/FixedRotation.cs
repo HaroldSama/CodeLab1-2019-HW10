@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class FixedRotation : MonoBehaviour
 {
+    public GameObject nodeRidding;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,5 +15,6 @@ public class FixedRotation : MonoBehaviour
     void Update()
     {
         transform.rotation = Quaternion.identity;
+        transform.position = nodeRidding.transform.position;
     }
 }
